@@ -13,7 +13,7 @@ body {
 
 .navbar {
   padding: 20px;
-
+gap: 10px;
   border-bottom: solid black 1px;
   display: flex;
   justify-content: space-between;
@@ -106,14 +106,18 @@ body {
   transition: 0.5s;
 }
 
+.saleimage1{
+   width: 100%;
+}
+
 .offerbox1 {
   background-color:#A435F0;
   height: 130px;
   width: 350px;
   position: absolute;
-
   top: 380px;
   left: 190px;
+  
 }
 
 .offerbox2 {
@@ -137,7 +141,7 @@ body {
 
 
 .recommended {
-  padding: 20px;
+  padding: 10px;
 
 }
 
@@ -145,16 +149,13 @@ body {
   padding: 50px;
   display: flex;
   flex-wrap: wrap;
-
-  justify-content: space-around;
-  gap: 100px;
-
-
+  justify-content: space-between;
+  gap: 50px;
 }
 
 .course-card {
-  width: 200px;
-
+  flex-basis: 20%;
+  flex-grow: 1;
 }
 
 .course-card img {
@@ -229,4 +230,38 @@ body {
   margin-left: 30px;
   color: #A435F0;
 
+}
+
+@media screen and (max-width:800px) {
+  body{ 
+    font-size: 10px;
+  }
+}
+@media screen and (max-width:600px) {
+.course-card{
+  flex-basis: 40%;
+}
+.tittlebar{
+  display: none;
+}
+}   
+@media screen and (max-width:600px) {
+  .saleimage{
+   display: flex;
+  }
+}
+@media screen and (max-width:600px) {
+  .offerbox1,.offerbox2{
+    display: none;
+   }
+}
+@media screen and (max-width:600px) {
+  .sec3{
+    display: none;
+  }
+}
+@media screen and (min-width:600px) {
+  .sec4{
+    display: none;
+  }
 }
